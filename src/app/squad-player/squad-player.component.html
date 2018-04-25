@@ -1,0 +1,17 @@
+<h3> Name: {{player.name}}, Position: {{player.position}}, Trait: {{trait}}
+<br>
+  Fitness: {{player.fitness}}
+  Contracts: {{player.contracts}}
+</h3>
+
+<button (click)="addFitnessBronze(player)">Add fitness</button>
+<button (click)="addContractsBronze(player)">Add contracts</button>
+
+<br>
+
+<button (click)="vote(true)" [disabled]="voted">Agree</button>
+<button (click)="vote(false)" [disabled]="voted">Disagree</button>
+
+<br>
+
+
