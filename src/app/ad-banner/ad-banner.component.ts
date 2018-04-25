@@ -3,7 +3,6 @@ import {AdDirective} from '../ad.directive';
 import {AdComponent} from '../ad-component';
 import {AdItem} from '../../ad-item';
 
-
 @Component({
   selector: 'app-ad-banner',
   templateUrl: './ad-banner.component.html',

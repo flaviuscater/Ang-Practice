@@ -1,6 +1,8 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ApplicationRef } from '@angular/core';
+import { HttpModule} from '@angular/http';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -21,6 +23,7 @@ import { AdComponent } from './ad-component';
 import { HeroJobAdComponent } from './hero-job-ad/hero-job-ad.component';
 import { HeroProfileComponent } from './hero-profile/hero-profile.component';
 import { AboutComponent } from './about/about.component';
+import {AdService} from './ad.service';
 
 
 @NgModule({
@@ -47,9 +50,9 @@ import { AboutComponent } from './about/about.component';
       apiKey: 'AIzaSyDQCFQLG-EtcuX-8MX23WGSUvhy-yM4Vto'
     })
   ],
-  providers: [],
-  bootstrap: [AppComponent],
-  entryComponents: [HeroJobAdComponent, HeroProfileComponent ]
+  providers: [ AdService ],
+  entryComponents: [HeroJobAdComponent, HeroProfileComponent ],
+  bootstrap: [AppComponent]
 })
 
 

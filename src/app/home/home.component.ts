@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import 'rxjs/add/observable/of';
 import { MapComponent} from '../map/map.component';
-import {AdService} from '../ad.service';
-import {AdItem} from '../../ad-item';
 
 @Component({
   selector: 'app-home',
@@ -11,11 +9,8 @@ import {AdItem} from '../../ad-item';
 })
 export class HomeComponent implements OnInit {
 
-  ads: AdItem[];
-
-  constructor(private adService: AdService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.ads = this.adService.getAds();
   }
 }
