@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeroJobAdComponent } from './hero-job-ad.component';
+import { LvpAdComponent } from './lvp-ad.component';
 
-describe('HeroJobAdComponent', () => {
-  let component: HeroJobAdComponent;
-  let fixture: ComponentFixture<HeroJobAdComponent>;
+describe('LvpAdComponent', () => {
+  let component: LvpAdComponent;
+  let fixture: ComponentFixture<LvpAdComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeroJobAdComponent ]
+      declarations: [ LvpAdComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeroJobAdComponent);
+    fixture = TestBed.createComponent(LvpAdComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

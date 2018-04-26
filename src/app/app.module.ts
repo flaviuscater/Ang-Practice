@@ -20,10 +20,9 @@ import { AgmCoreModule } from '@agm/core';
 import { AdDirective } from './ad.directive';
 import { AdBannerComponent } from './ad-banner/ad-banner.component';
 import { AdComponent } from './ad-component';
-import { HeroJobAdComponent } from './hero-job-ad/hero-job-ad.component';
-import { HeroProfileComponent } from './hero-profile/hero-profile.component';
 import { AboutComponent } from './about/about.component';
 import {AdService} from './ad.service';
+import { LvpAdComponent } from './lvp-ad/lvp-ad.component';
 
 
 @NgModule({
@@ -36,9 +35,8 @@ import {AdService} from './ad.service';
     MapComponent,
     AdDirective,
     AdBannerComponent,
-    HeroJobAdComponent,
-    HeroProfileComponent,
-    AboutComponent
+    AboutComponent,
+    LvpAdComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +49,7 @@ import {AdService} from './ad.service';
     })
   ],
   providers: [ AdService ],
-  entryComponents: [HeroJobAdComponent, HeroProfileComponent ],
+  entryComponents: [ LvpAdComponent ],
   bootstrap: [AppComponent]
 })
 
